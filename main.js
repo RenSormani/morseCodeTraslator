@@ -84,3 +84,18 @@ function text2morse() {
 function getKey(obj, val) {
     return Object.keys(obj).find(key => obj[key] === val);
   }
+
+  // Function for decrypting the message
+function morse2text() {
+	let code = document.getElementById("input").value;
+	let arr1 = code.split(" ");
+	let arr2 = arr1.map(x => {
+		if(getKey(mapping, x))
+		{
+			return getKey(mapping, x);
+		} else if(x == "") {
+			return " ";
+		} else {
+			return x;
+		}
+	});	
