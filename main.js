@@ -79,3 +79,8 @@ function text2morse() {
 	let code = arr2.join(" ");
 	document.getElementById("output").value = code;	
 }
+
+// Function to search value in an object
+function getKey(obj, val) {
+    return Object.keys(obj).find(key => obj[key] === val);
+  }
