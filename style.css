@@ -1,0 +1,46 @@
+body {
+  margin-top: 1rem;
+  background-color: #94a7b8;
+  font-family: Orbitron;
+  color: #d6d5d2;
+}
+
+h1 {
+  text-align: center;
+  font-family: Orbitron;
+  font-weight: 600;
+}
+
+#toggle {
+  color: #d6d5d2;
+  border: 1px solid, #d6d5d2;
+  border-color: #d6d5d2;
+}
+
+.container {
+  padding-left: 1rem;
+}
+
+#convert {
+  margin: 1rem;
+  color: #d6d5d2;
+  border: 1px solid, #d6d5d2;
+  border-color: #d6d5d2;
+  text-align: center;
+}
+
+textarea {
+  border-radius: 1rem;
+  padding: 1rem;
+  font-family: Orbitron;
+  font-size: larger;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  #input {
+    max-width: 100%;
+    height: auto;
+  }
+}
