@@ -1,0 +1,47 @@
+body {
+    margin-top: 1rem;
+    background-color: rgb(148, 167, 184);
+    font-family: Orbitron;
+    color: rgb(214, 213, 210);
+}
+
+h1 {
+    text-align: center;
+    font-family: Orbitron;
+    font-weight: 600;
+}
+
+#toggle{
+    color: rgb(214, 213, 210);
+    border: 1px solid, rgb(214, 213, 210);
+    border-color: rgb(214, 213, 210);
+}
+
+.container{
+    padding-left: 1rem;
+}
+
+#convert {
+    margin:1rem;
+    color: rgb(214, 213, 210);
+    border: 1px solid, rgb(214, 213, 210);
+    border-color: rgb(214, 213, 210);
+    text-align: center;
+}
+
+textarea {
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: Orbitron;
+    font-size: larger;
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 768px) {
+    #input {
+        max-width: 100%;
+        height: auto;
+    }
+
+}
