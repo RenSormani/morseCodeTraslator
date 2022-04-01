@@ -99,3 +99,8 @@ function morse2text() {
 			return x;
 		}
 	});	
+    
+	//Removes the space characters in a string
+	let text = arr2.join("").replace(/\s\s+/g, ' ');	
+	document.getElementById("output").value = text;		
+}
