@@ -60,7 +60,27 @@ form {
 
 @media screen and (max-width: 768px) {
   #input {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
+  }
+
+  #output {
+    max-width: 80%;
+    height: auto;
+  }
+
+  #container_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  body {
+    margin: 2rem;
+  }
+
+  b {
+    font-size: 1.5rem;
+    margin-bottom: -1rem;
   }
 }
