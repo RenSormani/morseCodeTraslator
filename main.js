@@ -26,7 +26,6 @@ const mapping = {
     "Y" : "-.--", 
     "Z" : "--..",
     
-    
     "0" : "-----",
     "1" : ".----", 
     "2" : "..---", 
@@ -38,6 +37,7 @@ const mapping = {
     "8" : "---..", 
     "9" : "----."
 }
+
 
 // Function for toggle functionality
 function toggle() {
@@ -104,3 +104,12 @@ function morse2text() {
 	let text = arr2.join("").replace(/\s\s+/g, ' ');	
 	document.getElementById("output").value = text;		
 }
+
+//--------------------------------CLEAR-------------------------------------------
+let inputValue;
+let outputValue = document.getElementById("output__text");
+
+document.getElementById("clear__button").addEventListener("click", () => {
+    document.getElementById("input").value = ""
+    document.getElementById("output").value = ""
+})

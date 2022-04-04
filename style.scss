@@ -29,6 +29,21 @@ h1 {
     text-align: center;
 }
 
+#clear__button{
+    margin:1rem;
+    color: rgb(214, 213, 210);
+    border: 1px solid, rgb(214, 213, 210);
+    border-color: rgb(214, 213, 210);
+    text-align: center;
+}
+
+.buttons {
+    color: rgb(214, 213, 210);
+    border: 1px solid, rgb(214, 213, 210);
+    border-color: rgb(214, 213, 210);
+    text-align: center;
+}
+
 textarea {
     border-radius: 1rem;
     padding: 1rem;
@@ -36,6 +51,11 @@ textarea {
     font-size: larger;
     width: 100%;
     height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }
 
 @media screen and (max-width: 768px) {
