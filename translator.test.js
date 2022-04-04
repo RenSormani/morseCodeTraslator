@@ -14,7 +14,7 @@ it ("Should translate b to -...", () => {
     expect(result).toBe("-...")
 })
 
-it ("Should translate b to -.-.", () => {
+it ("Should translate c to -.-.", () => {
     const result = text2morse(["c"]);
     expect(result).toBe("-.-.")
 })

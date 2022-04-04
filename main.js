@@ -106,9 +106,6 @@ function morse2text() {
 }
 
 //--------------------------------CLEAR-------------------------------------------
-let inputValue;
-let outputValue = document.getElementById("output__text");
-
 document.getElementById("clear__button").addEventListener("click", () => {
     document.getElementById("input").value = ""
     document.getElementById("output").value = ""
