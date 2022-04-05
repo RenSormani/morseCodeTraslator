@@ -11,14 +11,24 @@ h1 {
     font-weight: 600;
 }
 
-#toggle{
-    color: rgb(214, 213, 210);
-    border: 1px solid, rgb(214, 213, 210);
-    border-color: rgb(214, 213, 210);
+textarea {
+    border-radius: 1rem;
+    padding: 1rem;
+    font-family: Orbitron;
+    font-size: larger;
+    width: 100%;
+    height: auto;
 }
 
 .container{
     padding-left: 1rem;
+}
+
+// Buttons
+#toggle{
+    color: rgb(214, 213, 210);
+    border: 1px solid, rgb(214, 213, 210);
+    border-color: rgb(214, 213, 210);
 }
 
 #convert {
@@ -44,22 +54,23 @@ h1 {
     text-align: center;
 }
 
-textarea {
-    border-radius: 1rem;
-    padding: 1rem;
-    font-family: Orbitron;
-    font-size: larger;
-    width: 100%;
-    height: auto;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
 
 @media screen and (max-width: 768px) {
-    #input {
+    body {
+        margin: 2rem;
+
+    b {
+        font-size: 1.5rem;
+        margin-bottom: -1rem;
+    }
+
+    #container_text{
+       display: flex; 
+       flex-direction: column;
+       align-items: center;
+    }
+
+    }#input {
         max-width: 80%;
         height: auto;
     }
@@ -69,18 +80,9 @@ form {
         height: auto;
     }
 
-    #container_text{
-       display: flex; 
-       flex-direction: column;
-       align-items: center;
-    }
+    
 
-    body {
-        margin: 2rem;
-    }
+    
 
-    b {
-        font-size: 1.5rem;
-        margin-bottom: -1rem;
-    }
+    
 }

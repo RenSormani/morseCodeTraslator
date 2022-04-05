@@ -106,7 +106,8 @@ function morse2text() {
 }
 
 //--------------------------------CLEAR-------------------------------------------
-document.getElementById("clear__button").addEventListener("click", () => {
-    document.getElementById("input").value = ""
-    document.getElementById("output").value = ""
-})
+		document.getElementById("clear__button").addEventListener("click", () => {
+		document.getElementById("input").value = ""
+		document.getElementById("output").value = ""
+		})
+

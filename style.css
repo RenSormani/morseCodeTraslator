@@ -11,14 +11,23 @@ h1 {
   font-weight: 600;
 }
 
-#toggle {
-  color: #d6d5d2;
-  border: 1px solid, #d6d5d2;
-  border-color: #d6d5d2;
+textarea {
+  border-radius: 1rem;
+  padding: 1rem;
+  font-family: Orbitron;
+  font-size: larger;
+  width: 100%;
+  height: auto;
 }
 
 .container {
   padding-left: 1rem;
+}
+
+#toggle {
+  color: #d6d5d2;
+  border: 1px solid, #d6d5d2;
+  border-color: #d6d5d2;
 }
 
 #convert {
@@ -44,21 +53,20 @@ h1 {
   text-align: center;
 }
 
-textarea {
-  border-radius: 1rem;
-  padding: 1rem;
-  font-family: Orbitron;
-  font-size: larger;
-  width: 100%;
-  height: auto;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
 @media screen and (max-width: 768px) {
+  body {
+    margin: 2rem;
+  }
+  body b {
+    font-size: 1.5rem;
+    margin-bottom: -1rem;
+  }
+  body #container_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   #input {
     max-width: 80%;
     height: auto;
@@ -67,20 +75,5 @@ form {
   #output {
     max-width: 80%;
     height: auto;
-  }
-
-  #container_text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  body {
-    margin: 2rem;
-  }
-
-  b {
-    font-size: 1.5rem;
-    margin-bottom: -1rem;
   }
 }

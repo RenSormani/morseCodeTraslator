@@ -1,0 +1,24 @@
+{
+  "name": "morsecodetraslator",
+  "version": "1.0.0",
+  "description": "A translator that can convert English to Morse Code and vice versa. I used JavaScript, HTML and CSS to create the converter and tested it with jest.",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RenSormani/morseCodeTraslator.git"
+  },
+  "keywords": [],
+  "author": "Renato Sormani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RenSormani/morseCodeTraslator/issues"
+  },
+  "homepage": "https://github.com/RenSormani/morseCodeTraslator#readme",
+  "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.17.7",
+    "jest": "^27.5.1"
+  }
+}
