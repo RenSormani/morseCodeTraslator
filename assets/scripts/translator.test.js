@@ -1,120 +1,120 @@
-import {text2morse, morse2text, toggle} from "./assets/scripts/app.js";
-
+import Translator from './translator.js';
+import { alphabet, morse } from './data';
+import { expect } from '@jest/globals';
 
 //test valid inputs
 // ENGLISH TO MORSE
 
 it("Should translate a to .-", () => {
-    const result = text2morse(["a"]);
+    const result = translateMorse('a');
     expect(result).toBe(".-")
 })
 
 it ("Should translate b to -...", () => {
-    const result = text2morse(["b"]);
+    const result = translateMorse(["b"]);
     expect(result).toBe("-...")
 })
 
 it ("Should translate c to -.-.", () => {
-    const result = text2morse(["c"]);
+    const result = translateMorse(["c"]);
     expect(result).toBe("-.-.")
 })
 
 it ("Should translate d to -..", () => {
-    const result = text2morse(["d"]);
+    const result = translateMorse(["d"]);
     expect(result).toBe("-..")
 })
 
 it ("Should translate e to .", () => {
-    const result = text2morse(["e"]);
+    const result = translateMorse(["e"]);
     expect(result).toBe(".")
 })
 
 it ("Should translate f to ..-.", () => {
-    const result = text2morse(["f"]);
+    const result = translateMorse(["f"]);
     expect(result).toBe("..-.")
 })
 
 it ("Should translate g to --.", () => {
-    const result = text2morse(["g"]);
+    const result = translateMorse(["g"]);
     expect(result).toBe("--.")
 })
 
 it ("Should translate h to ....", () => {
-    const result = text2morse(["h"]);
+    const result = translateMorse(["h"]);
     expect(result).toBe("....")
 })
 
 it ("Should translate i to ..", () => {
-    const result = text2morse(["i"]);
+    const result = translateMorse(["i"]);
     expect(result).toBe("..")
 })
 
 it ("Should translate j to .---", () => {
-    const result = text2morse(["j"]);
+    const result = translateMorse(["j"]);
     expect(result).toBe(".---")
 })
 
 it ("Should translate empty string to empty", () => {
-    const result = text2morse("");
+    const result = translateMorse("");
     expect(result).toBe("")
 })
 
 // MORSE TO ENGLISH
 
 it ("Should translate .- to a", () => {
-    const result = morse2text([".-"]);
+    const result = translateEnglish([".-"]);
     expect(result).toStrictEqual(["a"])
 })
 
 it ("Should translate -... to b", () => {
-    const result = morse2text(["-..."]);
+    const result = translateEnglish(["-..."]);
     expect(result).toStrictEqual(["b"])
 })
 
 it ("Should translate  -.-. to c", () => {
-    const result = morse2text(["-.-."]);
+    const result = translateEnglish(["-.-."]);
     expect(result).toStrictEqual(["c"])
 })
 
 it ("Should translate -.. to d", () => {
-    const result = morse2text(["-.."]);
+    const result = translateEnglish(["-.."]);
     expect(result).toStrictEqual(["d"])
 })
 
 it ("Should translate . to e", () => {
-    const result = morse2text(["."]);
+    const result = translateEnglish(["."]);
     expect(result).toStrictEqual(["e"])
 })
 
 it ("Should translate ..-. to f", () => {
-    const result = morse2text(["..-."]);
+    const result = translateEnglish(["..-."]);
     expect(result).toStrictEqual(["f"])
 })
 
 it ("Should translate --. to g", () => {
-    const result = morse2text(["--."]);
+    const result = translateEnglish(["--."]);
     expect(result).toStrictEqual(["g"])
 })
 
 it ("Should translate .... to h", () => {
-    const result = morse2text(["...."]);
+    const result = translateEnglish(["...."]);
     expect(result).toStrictEqual(["h"])
 })
 
 it ("Should translate .. to i", () => {
-    const result = morse2text([".."]);
+    const result = translateEnglish([".."]);
     expect(result).toStrictEqual(["i"])
 })
 
 
-// TOGGLE
+// Invalid Inputs
 
-it ("Should toggle from Decrypt message and Encrypt message", () => {
-    const result = toggle(["Decrypt Message"]);
-    expect(result).toBe(["Encrypt Message"])
-})
-
-it ("Should toggle from Encrypt message and Decrypt message", () => {
-    const result = toggle(["Encrypt Message"]);
-    expect(result).toBe(["Decrypt Message"])
-})
+// Null/No Inputs
+it('Should return please input valid text when input is null', () => {
+	const translator = new Translator();
+	const englishResult = translateEnglish('');
+	const morseResult = translateMorse('');
+	expect(englishResult).toBe('Please write a message to translate');
+	expect(morseResult).toBe('Please write a message to translate');
+});

@@ -10,7 +10,7 @@ class Translator {
 		this.translatedMessage = '';
 	}
 
-	text2Morse(message) {
+	translateMorse(message) {
 		console.log(message);
 		let inputText = message.toLowerCase();
 		if (inputText.length === 0) {
@@ -23,7 +23,7 @@ class Translator {
 		}
 	}
 
-	morse2Text(message) {
+	translateEnglish(message) {
 		let inputText = message;
 		if (inputText.length === 0) {
 			return 'Please write a message to translate';
