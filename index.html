@@ -10,30 +10,23 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1 class="heading">Use the Morse, Luke...</h1>
-        <div class="col-12 d-flex justify-content-center align-items-center">
-            <button id="toggle" class="btn btn-outline-primary" onclick="toggle()">Decrypt Message</button>        
-        </div>
-
-    <hr>
-
-    <div class="container d-flex justify-content-around align-items-center">
+	<body>
+        <h1 class="heading col-12 d-flex justify-content-center align-items-center">Use the Morse, Luke...</h1>
+			<div class="container d-flex justify-content-around align-items-center">
         <div id="container_text">
             <b>Input</b>
             <br>
-            <textarea id="input" cols="30" rows="5" placeholder="Type your message here..."></textarea>
+				<textarea type="text" placeholder="Type your message here..." id="input" class="blank" cols="30" rows="5"></textarea>
             <br>
-            <b>Output</b><br>
-            <textarea id="output" cols="30" rows="5"></textarea>
-
-            <div class="container d-flex justify-content-around align-items-center buttons">
-                <button id="convert" class="btn btn-md px-3 btn-outline-dark buttons" onclick="text2morse()">Convert to Morse Code</button>
-                <button id="clear__button"  class="btn btn-md px-3 btn-outline-dark buttons">reset</button>
-            </div>
-        </div>
-
-    
-
-</div>
-    <script type="text/javascript" src="./main.js"></script></html>
+            <b>Output</b>
+            <br>
+				<textarea type="text" placeholder="Translation appears here..." id="output" class="blank" cols="30" rows="5"></textarea>
+        <div class="buttons">
+					<button class="btn btn-md px-3 btn-outline-dark buttons" id="text2Morse">Translate to Morse</button>
+					<button class="btn btn-md px-3 btn-outline-dark buttons" id="morse2Text">Translate to English</button>
+				</div>
+			</div>
+		</div>
+		<script src="./assets/scripts/app.js" type="module"></script>
+	</body>
+</html>

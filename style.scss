@@ -1,88 +1,78 @@
 body {
     margin-top: 1rem;
-    background-color: rgb(148, 167, 184);
+    background-color: #94a7b8;
     font-family: Orbitron;
-    color: rgb(214, 213, 210);
-}
-
-h1 {
+    color: #d6d5d2;
+  }
+  
+  h1 {
     text-align: center;
     font-family: Orbitron;
     font-weight: 600;
-}
-
-textarea {
+  }
+  
+  textarea {
     border-radius: 1rem;
     padding: 1rem;
     font-family: Orbitron;
     font-size: larger;
     width: 100%;
     height: auto;
-}
-
-.container{
-    padding-left: 1rem;
-}
-
-// Buttons
-#toggle{
-    color: rgb(214, 213, 210);
-    border: 1px solid, rgb(214, 213, 210);
-    border-color: rgb(214, 213, 210);
-}
-
-#convert {
-    margin:1rem;
-    color: rgb(214, 213, 210);
-    border: 1px solid, rgb(214, 213, 210);
-    border-color: rgb(214, 213, 210);
+  }
+  
+  #toggle {
+    color: #d6d5d2;
+    border: 1px solid, #d6d5d2;
+    border-color: #d6d5d2;
+  }
+  
+  #convert {
+    margin: 1rem;
+    color: #d6d5d2;
+    border: 1px solid, #d6d5d2;
+    border-color: #d6d5d2;
     text-align: center;
-}
-
-#clear__button{
-    margin:1rem;
-    color: rgb(214, 213, 210);
-    border: 1px solid, rgb(214, 213, 210);
-    border-color: rgb(214, 213, 210);
+  }
+  
+  #clear__button {
+    margin: 1rem;
+    color: #d6d5d2;
+    border: 1px solid, #d6d5d2;
+    border-color: #d6d5d2;
     text-align: center;
-}
-
-.buttons {
-    color: rgb(214, 213, 210);
-    border: 1px solid, rgb(214, 213, 210);
-    border-color: rgb(214, 213, 210);
+  }
+  
+  .buttons {
+    color: #d6d5d2;
+    border: 1px solid, #d6d5d2;
+    border-color: #d6d5d2;
     text-align: center;
-}
-
-
-@media screen and (max-width: 768px) {
+    margin-top: 1rem;
+  }
+  
+  @media screen and (max-width: 768px) {
     body {
-        margin: 2rem;
-
-    b {
-        font-size: 1.5rem;
-        margin-bottom: -1rem;
+      margin: 2rem;
     }
-
-    #container_text{
-       display: flex; 
-       flex-direction: column;
-       align-items: center;
+  
+    body b {
+      font-size: 1.5rem;
+      margin-bottom: -1rem;
     }
-
-    }#input {
-        max-width: 80%;
-        height: auto;
+  
+    #container_text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-
+  
+    #input {
+      max-width: 80%;
+      height: auto;
+    }
+  
     #output {
-        max-width: 80%;
-        height: auto;
+      max-width: 80%;
+      height: auto;
     }
-
-    
-
-    
-
-    
-}
+  }

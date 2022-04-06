@@ -1,4 +1,4 @@
-import {text2morse, morse2text, toggle} from "./main.js";
+import {text2morse, morse2text, toggle} from "./assets/scripts/app.js";
 
 
 //test valid inputs
