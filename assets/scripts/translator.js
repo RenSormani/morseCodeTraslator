@@ -12,7 +12,7 @@ class Translator {
 
 	translateMorse(message) {
 		console.log(message);
-		let inputText = message.toLowerCase();
+		let inputText = message.toString().toLowerCase();
 		if (inputText.length === 0) {
 			return 'Please write a message to translate';
 		} else {
