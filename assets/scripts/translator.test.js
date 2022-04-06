@@ -1,6 +1,5 @@
 import Translator from './translator.js';
 import { alphabet, morse } from './data.js';
-import { expect } from '@jest/globals';
 
 //test valid inputs
 // ENGLISH TO MORSE
